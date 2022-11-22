@@ -123,7 +123,7 @@ sudo systemctl status mongod
 ```
 4. Install PM2
 ```
-yarn --global add pm2
+yarn global add pm2
 ```
 ```
 pm2 start dist/index.js(on dotakyan project)
