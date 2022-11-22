@@ -121,17 +121,53 @@ sudo systemctl start mongod
 ```
 sudo systemctl status mongod
 ```
-5. Install PM2
+4. Install PM2
 ```
 yarn --global add pm2
 ```
 ```
 pm2 start dist/index.js(on dotakyan project)
 ```
-7. Install Ngix
-8. Install Nodejs
-9. Install Yarn
-10. Install Mysql
+5. Install Nginx.
+```
+sudo apt install nginx
+```
+Check firewall server (ubuntu).
+- If inactive, skip
+```
+sudo ufw app list
+```
+```
+Output
+Available applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+```
+```
+sudo ufw allow 'Nginx HTTP'
+```
+```
+sudo ufw status
+```
+Checking web server.
+```
+systemctl status nginx
+```
+```
+● nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2020-04-20 16:08:19 UTC; 3 days ago
+     Docs: man:nginx(8)
+ Main PID: 2369 (nginx)
+    Tasks: 2 (limit: 1153)
+   Memory: 3.5M
+   CGroup: /system.slice/nginx.service
+           ├─2369 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+           └─2380 nginx: worker process
+```
+6. Install Mysql
 ```
 sudo apt update
 ```
