@@ -87,7 +87,7 @@ Swap:          1.0G          0B        1.0G
 sudo apt update
 ```
 ```
-sudo apt install redis
+sudo apt install -y redis
 ```
 ```
 sudo systemctl start redis-server
@@ -101,7 +101,7 @@ MongoDB 6.0
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
 ```
 ```
-sudo apt-get install gnupg
+sudo apt-get install -y gnupg
 ```
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
