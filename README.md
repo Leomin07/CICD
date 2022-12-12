@@ -21,7 +21,7 @@ sudo nano authorized_keys (Add ssh key to server)
 ```
 Set server SSH key to git hub.
 ```
-ssh-keygen -t rsa -b 4096 -C "truongezgg@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "tranminhsvp@gmail.com"
 ```
 ```
 cat ~/.ssh/id_rsa.pub
